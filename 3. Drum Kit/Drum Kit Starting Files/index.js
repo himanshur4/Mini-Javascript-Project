@@ -38,6 +38,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 
         makeSound(this.innerHTML);
+        makeAnimation(this.innerHTML);
     });
 
 
@@ -45,5 +46,13 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 document.addEventListener("keydown", function (event) {
     var ch = event.key;
     makeSound(ch);
+    makeAnimation(ch);
 
 })
+function makeAnimation(ch) {
+    var active=document.querySelector("."+ch);
+    active.classList.add("pressed");
+    setTimeout(function(){
+        active.classList.remove("pressed");
+    },100);
+}

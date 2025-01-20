@@ -74,7 +74,7 @@ input[type="date"]:hover {
     transform: scale(1.02);
 }
 
-button[type="calculate"] {
+button[id="calculate"] {
     margin-top: 20px;
     padding: 10px;
     font-size: 18px;
@@ -119,5 +119,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     100% {
         background-position: 0% 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .dob-container {
+        padding: 20px;
+    }
+    .dob-container h2 {
+        font-size: 20px;
+    }
+    input[type="date"] {
+        height: 35px;
+        font-size: 14px;
+    }
+    button {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .result{
+        font-size: 1.5rem;
     }
 }
