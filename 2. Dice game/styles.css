@@ -1,0 +1,35 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #4e055a;
+}
+
+h1 {
+  margin: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 5px 0 #3a4b62;
+  font-size: 7rem;
+  color: #afbe0a;
+}
+
+p {
+  font-size: 2rem;
+  color: #afbe0a;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+

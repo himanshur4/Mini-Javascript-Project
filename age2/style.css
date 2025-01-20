@@ -21,16 +21,19 @@ body {
     margin-left: 2rem;
 }
 
-h1 span:first-child {
-    color: #FFD700;
-    /* Gold */
+h1{
+    color:#FFD700;
 }
 
-h1 span:last-child {
+span {
     color: #FFD700;
     /* White */
 }
-
+#result{
+    color:rgb(197, 197, 197);
+    border:none;
+    background:transparent;
+}
 .dob-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
@@ -90,20 +93,16 @@ button[type="calculate"]:hover {
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    /* Hide the default date picker icon */
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* Adjust position */
-    width: 0;
-    /* Custom size */
-    height: 0;
-    
-    /* Custom icon */
-    
+    background: transparent;
+    bottom: 0;
+    color: transparent;
     cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
     
 
 }
